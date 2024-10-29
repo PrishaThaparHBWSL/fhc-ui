@@ -44,10 +44,12 @@ import { GrPowerReset } from "react-icons/gr";
 export default function Data() {
   return (
     <div className="mb-10">
-      <div className="w-[90%] mx-auto h-screen border border-gray-300">iframe</div>
+      <div className="w-[90%] mx-auto h-screen border border-gray-300 mt-10">
+        iframe
+      </div>
       <div className="bg-[#E5E5E5] w-[90%] mx-auto border border-gray-300">
-        <div className="flex space-x-10 justify-center">
-          <div>
+        <div className="flex space-x-10 justify-start m-4">
+          <div className="w-full">
             <div>
               <span className="font-bold">
                 Add Product/Configuration to Quote{" "}
@@ -64,16 +66,16 @@ export default function Data() {
               start from scratch.
             </div>
           </div>
-          <div>
+          <div className="w-full">
             <div className="flex space-x-2">
               <div>
-                <button className="flex gap-2 bg-[#FF9E8C] p-3">
+                <button className="flex gap-2 bg-[#FF9E8C] p-2">
                   <IoMdAdd className="h-5 w-5" />
                   <div>Add Product/Configuration to Quote</div>
                 </button>
               </div>
               <div>
-                <button className="flex gap-2 bg-[#FF9E8C] p-3">
+                <button className="flex gap-2 bg-[#FF9E8C] p-2">
                   <GrPowerReset className="h-5 w-5" />
                   <div>Reset the Configurator</div>
                 </button>
@@ -81,16 +83,26 @@ export default function Data() {
             </div>
             <div>
               <div>
-              <form action="/action_page.php">
-  <div><label className="font-bold">Change Configurator:</label></div>
-  <select id="configurator" name="configurator">
-    <option value="Herc Door Entrances1">Herc Door Entrances1</option>
-    <option value="Herc Door Entrances2">Herc Door Entrances2</option>
-    <option value="Herc Door Entrances3">Herc Door Entrances3</option>
-    <option value="Herc Door Entrances4">Herc Door Entrances4</option>
-  </select>
-  {/* <div><input type="submit" /></div> */}
-</form>
+                <form action="">
+                  <div className="mt-3">
+                    <label className="font-bold">Change Configurator:</label>
+                  </div>
+                  <select id="configurator" name="configurator" className="w-full h-10">
+                    <option value="Herc Door Entrances1">
+                      Herc Door Entrances1
+                    </option>
+                    <option value="Herc Door Entrances2">
+                      Herc Door Entrances2
+                    </option>
+                    <option value="Herc Door Entrances3">
+                      Herc Door Entrances3
+                    </option>
+                    <option value="Herc Door Entrances4">
+                      Herc Door Entrances4
+                    </option>
+                  </select>
+                  {/* <div><input type="submit" /></div> */}
+                </form>
               </div>
             </div>
           </div>
